@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.qiutiandev.mods.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin",
+		"MinecraftMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

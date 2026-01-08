@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "fake-fps",
+	"version": "${version}",
+	"name": "FPS Spoofer",
+	"description": "A client-side mod that allows you to customize your FPS display with realistic fluctuations. Control via /fpsspoof commands.",
+	"authors": [
+		"Qiu Tian"
+	],
+	"contact": {
+		"sources": "https://github.com/qiutian-dev/fake-fps"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fake-fps/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.qiutiandev.mods.FakeFps"
+		],
+		"client": [
+			"com.qiutiandev.mods.FakeFpsClient"
+		]
+	},
+	"mixins": [
+		"fake-fps.mixins.json",
+		{
+			"config": "fake-fps.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
