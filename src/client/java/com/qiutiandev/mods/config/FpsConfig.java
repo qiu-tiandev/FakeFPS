@@ -40,12 +40,12 @@ public class FpsConfig {
     }
 
     public void setFpsMultiplier(double fpsMultiplier) {
-        this.fpsMultiplier = Math.max(0.1, fpsMultiplier);
+        this.fpsMultiplier = Math.min(10000, Math.max(0.1, Math.abs(fpsMultiplier)));
         save();
     }
 
     public void setFluctuationRange(double fluctuationRange) {
-        this.fluctuationRange = Math.max(0.0, fluctuationRange);
+        this.fluctuationRange = Math.min(0.99, Math.max(0.0, fluctuationRange));
         save();
     }
 
@@ -60,12 +60,9 @@ public class FpsConfig {
 
         try (FileReader reader = new FileReader(configFile)) {
             FpsConfig config = GSON.fromJson(reader, FpsConfig.class);
-            if (config == null) {
-                return new FpsConfig();
-            }
-            return config;
+            return config != null ? config : new FpsConfig();
         } catch (Exception e) {
-            FakeFps.LOGGER.error("Failed to load config, using defaults", e);
+            FakeFps.LOGGER.error("Failed to load config", e);
             return new FpsConfig();
         }
     }

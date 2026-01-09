@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "fake-fps",
 	"version": "${version}",
-	"name": "FPS Spoofer",
-	"description": "A client-side mod that allows you to customize your FPS display with realistic fluctuations. Control via /fpsspoof commands.",
+	"name": "FakeFPS",
+	"description": "Spoof your FPS display with customizable multipliers and realistic fluctuations.",
 	"authors": [
 		"Qiu Tian"
 	],

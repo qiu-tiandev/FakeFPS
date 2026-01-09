@@ -11,7 +11,7 @@ public class FakeFpsClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		config = FpsConfig.load();
-		FakeFps.LOGGER.info("FPS Spoofer initialized");
+		FakeFps.LOGGER.info("FakeFPS initialized");
 
 		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) ->
 			FpsSpoofCommand.register(dispatcher, config)

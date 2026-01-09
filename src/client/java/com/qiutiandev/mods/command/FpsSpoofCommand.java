@@ -22,7 +22,7 @@ public class FpsSpoofCommand {
                 .then(argument("value", DoubleArgumentType.doubleArg(0.1, 10000))
                     .executes(context -> setMultiplier(context, config))))
             .then(literal("fluctuation")
-                .then(argument("percent", DoubleArgumentType.doubleArg(0.0, 10000))
+                .then(argument("percent", DoubleArgumentType.doubleArg(0.0, 99))
                     .executes(context -> setFluctuation(context, config))))
             .then(literal("reset")
                 .executes(context -> reset(context, config)))
@@ -93,8 +93,8 @@ public class FpsSpoofCommand {
             "  §e/fpsspoof enable §7- Enable\n" +
             "  §e/fpsspoof disable §7- Disable\n" +
             "  §e/fpsspoof toggle §7- Toggle\n" +
-            "  §e/fpsspoof multiplier <value> §7- Set multiplier (min 0.1)\n" +
-            "  §e/fpsspoof fluctuation <percent> §7- Set variation (min 0%)\n" +
+            "  §e/fpsspoof multiplier <value> §7- Set multiplier (0.1-10000)\n" +
+            "  §e/fpsspoof fluctuation <percent> §7- Set variation (0-99%)\n" +
             "  §e/fpsspoof reset §7- Reset defaults\n" +
             "  §e/fpsspoof status §7- Show settings"
         ));
