@@ -17,7 +17,7 @@ FakeFPS is a fabric mod that displays fake fps values on screen. Use it to flex 
 
 ## Installation
 
-1. Install **Fabric Loader 0.17.3** or newer for Minecraft 1.21.1x
+1. Install **Fabric Loader 0.17.2** or newer for Minecraft 1.21.1x
 2. Place `fake-fps-v.x.x.jar` in your `mods` folder  
 3. Start Minecraft with the Fabric profile
 5. **Make sure you have the fabric api mod**
