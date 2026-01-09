@@ -3,7 +3,7 @@
 **Mod ID:** `fake-fps`  
 **Latest Version:** v1.2.1  
 **Minecraft:** 1.21.10  
-**Fabric Loader:** 0.17.3+  
+**Fabric Loader:** 0.17.2+  
 
 ---
 
