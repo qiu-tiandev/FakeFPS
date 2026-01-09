@@ -10,7 +10,9 @@
 ## Description
 
 FakeFPS is a fabric mod that displays fake fps values on screen. Use it to flex on your friends!
+
 **NOTE: This mod does not provide actual performance boost in any way.**
+
 ---
 
 ## Installation
